@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/MainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/tranceparent"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/customBottomBar"
+            android:layout_width="match_parent"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_height="70dp"
+            app:itemPaddingBottom="5dp"
+            app:shapeAppearance="@color/white"
+            app:itemActiveIndicatorStyle="@null"
+            app:itemRippleColor="@color/tranceparent"
+            app:itemBackground="@color/tranceparent"
+            app:itemIconTint="@color/bottom_navigation_icon_color"
+            app:itemTextColor="@color/bottom_nav_text_color_selector"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/circleIndicator"
+            android:layout_marginTop="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:translationZ="4dp"
+            app:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/idicatorImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/booking"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

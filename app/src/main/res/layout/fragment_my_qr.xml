@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_blue"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+       tools:context=".fragmens.MyQrFragment">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:gravity="center"
+        android:layout_marginHorizontal="15.dp"
+        android:layout_marginTop="8.dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="20.dp"
+            android:src="@drawable/location"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ND 59, India"
+            android:textSize="11.sp"
+            android:textColor="@color/blue"/>
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50.dp"
+            android:src="@drawable/ic_logo_color"/>
+
+        <ImageView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="20.dp"
+            android:src="@drawable/vector_smart_object_6"/>
+
+        <ImageView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="20.dp"
+            android:src="@drawable/vector_smart_object_7"/>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        app:cardElevation="2dp"
+        android:layout_marginHorizontal="20.dp"
+        app:cardCornerRadius="20.dp"
+        android:layout_height="320.dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150.dp"
+                    android:layout_height="150.dp"
+                    android:src="@drawable/qr"/>
+
+                <ImageView
+                    android:layout_width="35.dp"
+                    android:layout_height="35.dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/vector_smart_object"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gautam Singh"
+                android:textSize="16.sp"
+                android:layout_marginTop="15.dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                />
+            
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20.dp"
+                    android:layout_height="20.dp"
+                    android:src="@drawable/phone"
+                    android:tint="#736D6D"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#736D6D"
+                    android:layout_marginHorizontal="10.dp"
+                    android:textStyle="bold"
+                    android:text="+91 8178395832"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20.dp"
+                    android:layout_height="20.dp"
+                    android:src="@drawable/mail"
+                    android:tint="#736D6D"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#736D6D"
+                    android:layout_marginHorizontal="10.dp"
+                    android:textStyle="bold"
+                    android:text="Gautamsingh29dec@gmail"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
